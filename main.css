@@ -80,7 +80,6 @@ nav ul li a:hover {
   }
 }
 
-
 .page-footer::before {
   content: '';
   position: absolute;
