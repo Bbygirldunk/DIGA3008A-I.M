@@ -1,3 +1,4 @@
+
 .intro-section {
     max-width: 1000px;
     margin: 2rem auto;
@@ -14,7 +15,7 @@
     animation: popIn 2s ease-in forwards;
   }
   
-@keyframes popIn{
+  @keyframes popIn{
     0%{
       transform: scaleX(20%);
     }
@@ -79,3 +80,5 @@
   .go-to-item a:hover {
     color: #f8c8dc;
   }
+  
+  
