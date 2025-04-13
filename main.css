@@ -10,35 +10,6 @@ body {
   align-items: center;
   text-align: center;
 }
-
-.page-header {
-  width: 100vw;
-  position: relative;
-  z-index: 5;
-  animation: slideIn 2s ease-out forwards;
-}
-
-.page-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 5em;
-  background: linear-gradient(to right, #88005a, #ffa7dd);
-  -webkit-background-clip: fill;
-  -webkit-text-fill-color: rgb(46, 1, 38);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: bold;
-  margin-top: 3rem;
-}
-@keyframes slideIn{
-  0%{
-    transform: translateX(-100%);
-  }
-  100%{
-    transform: translateX(0%)
-  }
-}
-
 nav {
   width: 100%;
   background-color: #ffd6f4;
@@ -77,4 +48,116 @@ nav ul li a:hover {
   color: #f8c8dc;
   background-color: #00376f;
   border-radius: 5px;
+}
+
+
+
+.page-header {
+  width: 100vw;
+  position: relative;
+  z-index: 5;
+  animation: slideIn 2s ease-out forwards;
+}
+
+.page-header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 5em;
+  background: linear-gradient(to right, #88005a, #ffa7dd);
+  -webkit-background-clip: fill;
+  -webkit-text-fill-color: rgb(46, 1, 38);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+  margin-top: 3rem;
+}
+@keyframes slideIn{
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%)
+  }
+}
+
+
+.page-footer::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 214, 246, 0.3), transparent 70%);
+  z-index: -1;
+  filter: blur(50px);
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.page-footer {
+  margin-top: 6rem;
+  padding: 3rem 2rem;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  background: rgba(255, 240, 250, 0.3); /* pastel background with soft glow */
+  color: #40002c;
+  position: relative;
+  width: 100%;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-top: 1px solid rgba(255, 183, 235, 0.3);
+  box-shadow: 0 -5px 20px rgba(136, 0, 90, 0.05);
+}
+
+.page-footer::before {
+  content: '';
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 214, 246, 0.3), transparent 70%);
+  z-index: -1;
+  filter: blur(50px);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.footer-links li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #88005a;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.footer-links li a:hover {
+  opacity: 0.8;
+  color: #000000;
+}
+
+.footer-note {
+  font-size: 0.95rem;
+  color: rgba(64, 0, 44, 0.6);
+  margin-top: 1.5rem;
+  letter-spacing: 1px;
+  font-style: italic;
 }
