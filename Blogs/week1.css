@@ -10,12 +10,12 @@ body {
   }
   
   .blog-post {
-    max-width: 800px;
+    max: width 850px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.6);
     padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(255, 167, 248, 0.3);
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgb(255, 93, 242);
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
   }
@@ -26,7 +26,8 @@ body {
   
   .blog-post h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 5rem;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 1rem;
     background: linear-gradient(to right, #ff99cc, #9966cc);
@@ -37,18 +38,19 @@ body {
   .blog-post h2 {
     font-size: 2rem;
     margin-top: 2rem;
-    color: #80004d;
+    color: #230015;
   }
   
   .blog-post h3 {
     font-size: 1.2rem;
-    color: #99004d;
+    color: #230015;
     text-align: center;
   }
   
   .blog-post p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+    font-weight: bold;
   }
   
   .blog-post a {

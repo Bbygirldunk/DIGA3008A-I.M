@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background: radial-gradient(ellipse farthest-corner at 50% 50%, #ff6cee, #bd6ddc);
+  background: radial-gradient(ellipse farthest-corner at 50% 50%, #f996d9f4, #f98fff);
   color: #333;
   line-height: 1.6;
   min-height: 100vh;
@@ -18,7 +18,7 @@ nav {
   left: 0;
   z-index: 20;
   padding: 15px 0;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgb(244, 59, 192);
 }
 
 nav ul {
@@ -62,7 +62,7 @@ nav ul li a:hover {
 .page-header h1 {
   font-family: 'Playfair Display', serif;
   font-size: 5em;
-  background: linear-gradient(to right, #88005a, #ffa7dd);
+  background: linear-gradient(to right, #691a4f, #e896c8);
   -webkit-background-clip: fill;
   -webkit-text-fill-color: rgb(46, 1, 38);
   text-align: center;
@@ -103,18 +103,18 @@ nav ul li a:hover {
 }
 
 .page-footer {
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 3rem 2rem;
   text-align: center;
   font-family: 'Playfair Display', serif;
-  background: rgba(255, 240, 250, 0.3); /* pastel background with soft glow */
+  background: rgba(255, 240, 250, 0.3); 
   color: #40002c;
   position: relative;
   width: 100%;
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border-top: 1px solid rgba(255, 183, 235, 0.3);
-  box-shadow: 0 -5px 20px rgba(136, 0, 90, 0.05);
+  box-shadow: 0 -5px 20px rgb(255, 160, 223);
 }
 
 .page-footer::before {

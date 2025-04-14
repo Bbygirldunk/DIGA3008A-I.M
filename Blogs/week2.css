@@ -8,14 +8,15 @@ body {
     line-height: 1.7;
   }
   
+   
   .blog-post {
-    max-width: 900px;
+    max: width 850px;
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    padding: 2.5rem;
-    box-shadow: 0 8px 30px rgba(255, 190, 240, 0.3);
-    backdrop-filter: blur(12px);
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgb(255, 93, 242);
+    backdrop-filter: blur(10px);
     transition: all 0.3s ease;
   }
   
@@ -45,8 +46,9 @@ body {
   }
   
   .blog-post p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
+    font-weight: bold;
   }
   
   .blog-post a {
