@@ -38,6 +38,7 @@ body {
     font-size: 2rem;
     margin-top: 2rem;
     color: #230015;
+    text-align: left;
   }
   
   .blog-post h3 {
@@ -50,14 +51,15 @@ body {
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: bold;
-  }
+    text-align: left;
+ }
   
-  .blog-post a {
+  /*.blog-post a {
     color: #800080;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-  }
+  }*/
   
   .blog-post a:hover {
     color: #cc66ff;
