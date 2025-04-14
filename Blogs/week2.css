@@ -26,7 +26,7 @@ body {
   
   .blog-post h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
     background: linear-gradient(to right, #ff99cc, #9966cc);
     -webkit-background-clip: text;

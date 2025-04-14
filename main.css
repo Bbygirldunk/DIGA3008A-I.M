@@ -54,7 +54,7 @@ nav ul li a:hover {
 
 .page-header {
   width: 100vw;
-  position: relative;
+  position: flex;
   z-index: 5;
   animation: slideIn 2s ease-out forwards;
 }
@@ -165,4 +165,11 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+}
+@media (max-width:100%){
+  .skills-grid{
+    flex-direction: column;
+    align-items:center ;
+
+}
 }

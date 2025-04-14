@@ -7,6 +7,7 @@ body {
     color: #4a0033;
     padding: 2rem;
     line-height: 1.8;
+
   }
   .blog-post {
     max-width: 850px;
@@ -54,22 +55,20 @@ body {
     text-align: left;
  }
   
-  /*.blog-post a {
+  .blog-post a {
     color: #800080;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s ease;
-  }*/
+  }
   
   .blog-post a:hover {
     color: #cc66ff;
+    transform: scale(1.01);
   }
   
-  hr {
-    border: none;
-    border-top: 2px dashed #ff99cc;
-    margin: 2rem 0;
-  }
+
+  
   nav a {
     display: inline-block;
     margin: 1rem 0.5rem;
@@ -83,4 +82,16 @@ body {
   
   nav a:hover {
     background: #e6ccff;
+  }
+
+  a:hover{
+    color: #cc66ff;
+    transform: scale(1.01);
+  }
+  
+  a{
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
   }

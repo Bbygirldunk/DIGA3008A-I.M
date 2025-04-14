@@ -1,9 +1,11 @@
+
 body {
     margin: 0;
     padding: 2rem;
     font-family: 'Cormorant Garamond', serif;
-    background: linear-gradient(to bottom right, #fff0f5, #e6faff);
+    background: linear-gradient(to bottom right, #ffe6f7, #e6f2ff);
     color: #4a0033;
+    line-height: 1.7;
   }
   
    
@@ -17,26 +19,30 @@ body {
     backdrop-filter: blur(10px);
     transition: all 0.3s ease;
   }
+  
+  .blog-post:hover {
+    transform: scale(1.005);
+  }
+  
   .blog-post h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3rem;
+    font-size: 5rem;
     text-align: center;
-    background: linear-gradient(to right, #ff99cc, #410d39);
+    background: linear-gradient(to right, #ff99cc, #9966cc);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
   .blog-post h2 {
     font-size: 2rem;
-    margin-top: 2.5rem;
-    color: #280516;
-    text-align: center;
+    margin-top: 2rem;
+    color: #80004d;
   }
   
   .blog-post h3 {
-    font-size: 1.5rem;
-    color: #280516;
-    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #aa3377;
   }
   
   .blog-post p {
@@ -44,6 +50,67 @@ body {
     margin-bottom: 1rem;
     font-weight: bold;
   }
+  
+  .blog-post a {
+    color: #800080;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .blog-post a:hover {
+    color: #cc66ff;
+  }
+  
+
+  .folder-structure ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .folder-structure li {
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 5px solid #ff99cc;
+    padding: 1rem;
+    border-radius: 10px;
+    font-weight: 500;
+    transition: transform 0.2s ease;
+  }
+  
+  .folder-structure li:hover {
+    transform: scale(1.03);
+  }
+  
+
+  .url-structure table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px rgba(200, 160, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .url-structure th,
+  .url-structure td {
+    padding: 1rem;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid #eee;
+  }
+  
+  .url-structure th {
+    background: #ffccf9;
+    color: #4a0033;
+  }
+  
+  .url-structure tr:hover td {
+    background: #fceaff;
+  }
+  
   
   nav a {
     display: inline-block;
@@ -60,7 +127,6 @@ body {
     background: #e6ccff;
   }
   
-
   .user-alignment,
   .website-content,
   .user-experience {
@@ -70,4 +136,3 @@ body {
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 5px 20px rgb(255, 204, 255);
   }
-  
