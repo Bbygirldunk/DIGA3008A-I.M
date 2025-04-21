@@ -17,16 +17,20 @@
      <header class ="page-header">
      <h1>Curated For Delight</h1> 
     </header> 
-
-     <nav>
-      <ul>
-      <li><a href="index.html">Home</a>
-      <li> <a href= "Blogs/BlogsCoverPage.html">Blogs</a></li>
-      <li> <a href= "Profile/About.html">Profile</a></li>
-      <li> <a href= "Contact/Contact.html">Contact</a></li>
-      <li> <a href="Portfolio/Portfolio.html"> Portfolio</a></li>
-      </ul>
-     </nav>
+    <nav>
+        <div class="nav-container">
+          <div class="logo">MySite</div>
+          <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Blogs/BlogsCoverPage.html">Blogs</a></li>
+            <li><a href="Profile/About.html">Profile</a></li>
+            <li><a href="Contact/Contact.html">Contact</a></li>
+            <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
+      
     
     <section class="intro-section"> 
 
@@ -48,5 +52,14 @@
     </section>
     </section>
 
+    <script>
+        const toggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+      
+        toggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+        });
+      </script>
+      
     </body>
 </html>
