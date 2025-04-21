@@ -84,7 +84,7 @@
 }
 
 .blog-intro-wrapper{
-dispay: flex;
+display: flex;
 justify-content: center;
 padding:3rem 1rem;
 background: rgba(225, 240, 250, 0.3);
