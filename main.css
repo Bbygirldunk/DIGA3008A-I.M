@@ -53,8 +53,8 @@ nav ul li a:hover {
 
 
 .page-header {
-  width: 100vw;
-  position: flex;
+  width: 100%;
+  display: flex;
   z-index: 5;
   animation: slideIn 2s ease-out forwards;
 }
@@ -172,4 +172,74 @@ main {
     align-items:center ;
 
 }
+}
+
+container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: flex;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    white-space: nowrap;
+  }
+}
+/* Tablets */
+@media (max-width: 1024px) {
+  .page-header h1 {
+    font-size: 3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .page-header h1 {
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  main {
+    padding: 1rem;
+  }
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
