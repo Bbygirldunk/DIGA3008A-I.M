@@ -132,3 +132,20 @@ img {
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
+.blog-post img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(255, 170, 255, 0.3);
+}
+@media (max-width: 768px) {
+  .blog-post {
+    padding: 1rem;
+  }
+
+  .blog-post img {
+    margin: 1rem 0;
+  }
+}

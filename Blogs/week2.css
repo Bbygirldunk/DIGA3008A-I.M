@@ -126,4 +126,11 @@ body {
   nav a:hover {
     background: #e6ccff;
   }
-  
+  @media (max-width: 768px) {
+    table {
+      border: 0;
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+    }
+  }
