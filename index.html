@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,46 +12,67 @@
     <title>Curated For Delight</title>
 </head>
 
-      <body>
-        <nav>
-            <div class="nav-container">
-              <div class="logo">MySite</div>
-              <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-              <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Blogs/BlogsCoverPage.html">Blogs</a></li>
-                <li><a href="Profile/About.html">Profile</a></li>
-                <li><a href="Contact/Contact.html">Contact</a></li>
-                <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
-              </ul>
-            </div>
-          </nav>
 
-     <header class ="page-header">
-     <h1>Curated For Delight</h1> 
-    </header> 
-   
-       <section class="intro-section"> 
+  <body>
+    <nav>
+        <div class="nav-container">
+          <div class="logo">MySite</div>
+          <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Blogs/BlogsCoverPage.html">Blogs</a></li>
+            <li><a href="Profile/About.html">Profile</a></li>
+            <li><a href="Contact/Contact.html">Contact</a></li>
+            <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+          </ul>
+        </div>
+      </nav>
 
-    
-    <p>Welcome to my little corner of the internet! I'm <a class="h-card" href ="Profile/About.html">Nosipho Makhathini</a> , a passionate digital artist, and this is where I get to show you a bit of what I love to do. Whether it's my writing or any 
-        <a href="Profile/About.html" >creative content</a> I pour my heart into every project. Take a look around, explore my work, and let’s connect! I’m always excited to meet new people and collaborate on fun ideas.</p> 
+ <header class ="page-header">
+ <h1>Curated For Delight</h1> 
+</header> 
+
+   <section class="intro-section"> 
 
 
-    <section class="go-to-section">
-    <h1>Go To:</h1>
+<p>Welcome to my little corner of the internet! I'm <a class="h-card" href ="Profile/About.html">Nosipho Makhathini</a> , a passionate digital artist, and this is where I get to show you a bit of what I love to do. Whether it's my writing or any 
+    <a href="Profile/About.html" >creative content</a> I pour my heart into every project. Take a look around, explore my work, and let’s connect! I’m always excited to meet new people and collaborate on fun ideas.</p> 
+
+
+<section class="go-to-section">
+<h1>Go To:</h1>
+<div class="go-to-item">
+
+    <a href="DesignSectionPage/designSection.html">Design Section</a>
+    </div>
+
     <div class="go-to-item">
+    <a href="EssaySectionPage/Essay Section.html">Essay Section</a>
+    </div>
+</section>
+</section>
+<footer class="page-footer">
+  <ul class="footer-links">
+  <li> <a href="../Contact/Contact.html">Get In Touch</a>
+  <li> <a href= "../index.html">Home</a></li>
+  </ul>
+<p class="footer-note"> Designed with love and pastel dreams </p>
+</footer>
 
-        <a href="DesignSectionPage/designSection.html">Design Section</a>
-        </div>
+  <script src="nav.js"></script>
+ 
 
-        <div class="go-to-item">
-        <a href="EssaySectionPage/Essay Section.html">Essay Section</a>
-        </div>
-    </section>
-    </section>
 
-      <script src="nav.js"></script>
-      <script src="scroll-navigation.js" defer></script>
-    </body>
+<button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
+  <img src="Images/scroll-downBtn.png" alt="Scroll down">
+</button>
+
+<button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
+  <img src="Images/scroll-upBtn.png" alt="Scroll up">
+</button>
+
+<script src="scrollButton.js" defer></script>
+
+</body>
+
 </html>
