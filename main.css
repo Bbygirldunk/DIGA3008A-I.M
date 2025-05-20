@@ -60,7 +60,7 @@ nav {
   color: #40002c;
 }
 
-/* Nav links default (desktop) */
+
 .nav-links {
   list-style: none;
   display: flex;
@@ -86,7 +86,7 @@ nav {
   border-radius: 5px;
 }
 
-/* Responsive styles */
+
 @media (max-width: 768px) {
   .menu-toggle {
     display: block;
@@ -308,4 +308,17 @@ main {
 .scroll-btn.show {
   opacity: 1;
   pointer-events: auto;
+}
+#star-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: linear-gradient(to bottom, #3a3472, #4f51c2, #24243e); /* dreamy space-like gradient */
+}
+#homepage-content {
+  position: relative;
+  z-index: 1;
 }

@@ -119,3 +119,12 @@ box-shadow:0 8px 25px rgba(136, 0, 90, 0.1)
     transform: translateY(0);
   }
 }
+#aurora-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background: #251f5b; 
+}
