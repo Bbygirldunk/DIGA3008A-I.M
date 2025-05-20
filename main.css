@@ -316,7 +316,7 @@ main {
   width: 100%;
   height: 100vh;
   z-index: -1;
-  background: linear-gradient(to bottom, #3a3472, #4f51c2, #24243e); /* dreamy space-like gradient */
+  background: linear-gradient(to bottom, #3a3472, #4f51c2, #24243e); 
 }
 #homepage-content {
   position: relative;
