@@ -46,3 +46,12 @@ function animate(time) {
 }
 
 animate(0);
+
+function resizeCanvasToFullPage() {
+  const canvas = document.getElementById("veil-bg");
+  canvas.width = window.innerWidth;
+  canvas.height = document.body.scrollHeight; // makes it match total page height
+}
+
+window.addEventListener("resize", resizeCanvasToFullPage);
+window.addEventListener("load", resizeCanvasToFullPage);

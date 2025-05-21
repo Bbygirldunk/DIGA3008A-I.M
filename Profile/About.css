@@ -93,7 +93,7 @@
 
 .profile-img-box,
 .about-text-box {
-  background: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.907);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-radius: 20px;
@@ -135,7 +135,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   z-index: -1;
   background: #251f5b; 
+  pointer-events: none;
 }
