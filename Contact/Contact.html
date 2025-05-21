@@ -12,8 +12,7 @@
   </head>
 
     <body>
-<canvas id="ribbon-aurora-bg"></canvas>
-
+    <canvas id="waveform-bg"></canvas>
     
   <nav>
     <div class="nav-container">
@@ -32,26 +31,42 @@
 
       <section class="page-header">
      <h1>Get In Touch With Me</h1>
+     
      <div class="contact-box">
       <div class="contact-info">
+         <div class="contact-heading">
+  <h2>Let’s Connect</h2>
+  <p>I’d love to hear from you! Whether it's a project, a question, or just to say hi.</p>
+</div>
 
-        <div class="contact-item">
-          <img src="../Images/email icon.png" alt="Email Icon" />
-          <span>2708798@students.wits.ac.za</span>
-        </div>
-    
-        <div class="contact-item">
-          <img src="../Images/phone icon.png" alt="Phone Icon" />
-          <span>067 669 1026</span>
-        </div>
-    
-        <div class="contact-item">
-          <img src="../Images/githb icon.png" alt="GitHub Icon" />
-          <span>@bbygirldunk</span>
-        </div>
-    
-      </div>
-    </header>
+
+<div class="contact-item">
+  <a href="mailto:2708798@students.wits.ac.za">
+  <button class="contact-button" id="emailBtn">
+    <img src="../Images/email icon.png" alt="Email Icon" />
+    <span>Email Me</span>
+  </a>
+  </button>
+</div>
+
+<div class="contact-item">
+  <a href="tel:+27676691026">
+  <button class="contact-button" id="phoneBtn">
+    <img src="../Images/phone icon.png" alt="Phone Icon" />
+    <span>Call Me</span>
+  </a>
+  </button>
+</div>
+
+<div class="contact-item">
+  <a href="https://github.com/Bbygirldunk" target="_blank" rel="noopener norefrrer">
+  <button class="contact-button" id="githubBtn">
+    <img src="../Images/githb icon.png" alt="GitHub Icon" />
+    <span>Visit GitHub</span>
+  </button>
+</a>
+</div>
+
     </section>
 
     <footer class="page-footer">
@@ -72,7 +87,7 @@
   <img src="../Images/scroll-upBtn.png" alt="Scroll up">
 </button>
 <script src="../scrollButton.js" defer></script>
-<script src="../ribbonAurora.js" defer></script>
+<script src="../waveform.js" defer></script>
 
     </body>
 </html>
