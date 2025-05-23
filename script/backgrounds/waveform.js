@@ -9,16 +9,19 @@ function resizeCanvas() {
 window.addEventListener("resize", resizeCanvas);
 resizeCanvas();
 
+///////////////////////////////////////////////////////
+// 🛠️ Customization Section
 const WAVE_SETTINGS = [
   {
-    color: "rgba(255, 182, 193, 0.4)", 
+    color: "rgba(255, 182, 193, 0.4)", // LightPink
+    amplitude: 60,
     speed: 0.0015,
     phaseOffset: 0,
     thickness: 400,
     glow: 400
   },
   {
-    color: "rgba(255, 105, 180, 0.3)", 
+    color: "rgba(255, 105, 180, 0.3)", // HotPink
     amplitude: 50,
     speed: 0.0025,
     phaseOffset: Math.PI / 2,
@@ -26,7 +29,7 @@ const WAVE_SETTINGS = [
     glow: 400
   },
   {
-    color: "rgba(255, 192, 203, 0.25)", 
+    color: "rgba(255, 192, 203, 0.25)", // Pink
     amplitude: 40,
     speed: 0.0008,
     phaseOffset: Math.PI,
@@ -34,6 +37,7 @@ const WAVE_SETTINGS = [
     glow: 400
   }
 ];
+///////////////////////////////////////////////////////
 
 class Wave {
   constructor(settings) {
