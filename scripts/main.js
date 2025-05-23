@@ -30,3 +30,4 @@ if (modulePath) {
 } else {
   console.info(`No animation configured for: ${path}`);
 }
+console.log("Full pathname:", window.location.pathname);
