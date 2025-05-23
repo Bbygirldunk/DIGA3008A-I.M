@@ -1,36 +1,37 @@
 // script/main.js
 
-// Map page filenames to their animation modules
 const pageToModuleMap = {
-  'index.html': '/backgrounds/particleAnimation.js',
-  'BlogsCoverPage.html': '/backgrounds/aurora.js',
-  'About.html': '/backgrounds/veilAurora.js',
-  'Contact.html': '/backgrounds/waveform.js',
-  'Portfolio.html': '/backgrounds/verticalWave.js'
+  'index.html': './backgrounds/particleAnimation.js',
+  'BlogsCoverPage.html': './backgrounds/aurora.js',
+  'About.html': './backgrounds/veilAurora.js',
+  'Contact.html': './backgrounds/waveform.js',
+  'Portfolio.html': './backgrounds/verticalWave.js'
 };
 
-// Extract filename or fallback to index.html
-let path = window.location.pathname.split('/').pop();
-if (!path || !path.includes('.html')) {
-  path = 'index.html';
+// Get just the current file name (e.g. "About.html")
+let filename = window.location.pathname.split('/').pop();
+
+// If no file (e.g. homepage), assume index.html
+if (!filename || !filename.endsWith('.html')) {
+  filename = 'index.html';
 }
 
-const modulePath = pageToModuleMap[path];
+console.log("Resolved filename:", filename);
+
+const modulePath = pageToModuleMap[filename];
 
 if (modulePath) {
   import(modulePath)
     .then((module) => {
       if (typeof module.default === 'function') {
-        module.default(); // Initialize background
+        module.default(); // Run animation
       } else {
-        console.warn(`Module ${modulePath} does not export a default function.`);
+        console.warn(`Module ${modulePath} has no default export.`);
       }
     })
     .catch((err) => {
-      console.error(`Failed to load module ${modulePath}:`, err);
+      console.error(`Failed to load ${modulePath}:`, err);
     });
 } else {
-  console.info(`No background animation configured for: ${path}`);
+  console.info(`No animation configured for: ${filename}`);
 }
-
-console.log("Resolved path:", path);
