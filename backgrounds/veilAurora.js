@@ -1,16 +1,7 @@
-// backgrounds/veilAurora.js
-
-/**
- * Initializes a layered wave animation that stretches across the full page height.
- * Designed for soft, dreamy visual backgrounds.
- */
-export default function initVeilAurora() {
-  const canvas = document.getElementById('veil-bg') || document.querySelector('canvas');
-  if (!canvas) {
-    console.warn('No canvas found for veil aurora background.');
-    return;
-  }
-
+const canvas = document.getElementById('veil-bg') || document.querySelector('canvas');
+if (!canvas) {
+  console.warn('No canvas found for veil aurora background.');
+} else {
   const ctx = canvas.getContext('2d');
   let width = canvas.width = window.innerWidth;
   let height = canvas.height = document.body.scrollHeight;
