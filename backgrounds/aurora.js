@@ -1,10 +1,13 @@
-// Aurora background animation module
-// This script creates a dreamy animated aurora wave background
+// backgrounds/aurora.js
 
-export function startAuroraAnimation(canvasId = "aurora-bg") {
-  const canvas = document.getElementById(canvasId);
+/**
+ * Initializes the dreamy animated aurora wave background.
+ * Attaches to a full-screen canvas with ID "aurora-bg" or defaults to the first <canvas>.
+ */
+export default function initAurora() {
+  const canvas = document.getElementById("aurora-bg") || document.querySelector("canvas");
   if (!canvas) {
-    console.warn(`Canvas with ID "${canvasId}" not found.`);
+    console.warn('No canvas found for aurora background.');
     return;
   }
 
@@ -19,7 +22,6 @@ export function startAuroraAnimation(canvasId = "aurora-bg") {
   window.addEventListener("resize", resizeCanvas);
   resizeCanvas();
 
-  // Define aurora wave settings
   const auroras = [];
   const colors = ["#fbc2eb", "#fcd5ce", "#fadadd"];
 

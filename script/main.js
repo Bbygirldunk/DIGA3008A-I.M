@@ -1,35 +1,32 @@
 // scripts/main.js
 
 const pageToModuleMap = {
-  'index.html': './backgrounds/particleAnimation.js',
-  'Blogs/BlogsCoverPage.html': './backgrounds/aurora.js',
-  'Profile/About.html': './backgrounds/veilAurora.js',
-  'contact/Contact.html': './backgrounds/waveform.js',
-  'Portfolio/Portfolio.html': './backgrounds/verticalWave.js'
+  'index.html': '/backgrounds/particleAnimation.js',
+  'Blogs/BlogsCoverPage.html': '/backgrounds/aurora.js',
+  'Profile/About.html': '/backgrounds/veilAurora.js',
+  'Contact/Contact.html': '/backgrounds/waveform.js',
+  'Portfolio/Portfolio.html': '/backgrounds/verticalWave.js'
 };
 
-// Normalize path to strip leading slashes
-const currentPath = window.location.pathname.replace(/^\/+/, '');
+// Extract path like "Blogs/BlogsCoverPage.html"
+const pathParts = window.location.pathname.split('/').filter(Boolean);
+const path = pathParts.slice(-2).join('/');
 
-// Try to match current path to a known module
-const matchedEntry = Object.entries(pageToModuleMap).find(([key]) =>
-  currentPath.endsWith(key)
-);
+// Attempt to import the matched module
+const modulePath = pageToModuleMap[path];
 
-if (matchedEntry) {
-  const modulePath = matchedEntry[1];
+if (modulePath) {
   import(modulePath)
     .then((module) => {
-      if (typeof module.startAuroraAnimation === 'function') {
-        module.startAuroraAnimation();
-      } else if (typeof module.startAnimation === 'function') {
-        module.startAnimation();
+      if (typeof module.default === 'function') {
+        module.default(); // Execute the animation initializer
+      } else {
+        console.warn(`Module ${modulePath} does not export a default function.`);
       }
-      console.log(`Loaded: ${modulePath}`);
     })
     .catch((err) => {
-      console.error(`Failed to load ${modulePath}:`, err);
+      console.error(`Failed to load module ${modulePath}:`, err);
     });
 } else {
-  console.warn('No animation module mapped for this page:', currentPath);
+  console.info(`No animation configured for: ${path}`);
 }
