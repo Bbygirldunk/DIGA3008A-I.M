@@ -1,4 +1,4 @@
-// scripts/main.js
+// script/main.js
 
 const pageToModuleMap = {
   'index.html': '/backgrounds/particleAnimation.js',
