@@ -1,16 +1,16 @@
 // script/main.js
 
+// Map of page filenames to their respective background animation modules
 const pageToModuleMap = {
   'index.html': '/backgrounds/particleAnimation.js',
-  'Blogs/BlogsCoverPage.html': '/backgrounds/aurora.js',
-  'Profile/About.html': '/backgrounds/veilAurora.js',
-  'Contact/Contact.html': '/backgrounds/waveform.js',
-  'Portfolio/Portfolio.html': '/backgrounds/verticalWave.js'
+  'BlogsCoverPage.html': '/backgrounds/aurora.js',
+  'About.html': '/backgrounds/veilAurora.js',
+  'Contact.html': '/backgrounds/waveform.js',
+  'Portfolio.html': '/backgrounds/verticalWave.js'
 };
 
-// Extract path like "Blogs/BlogsCoverPage.html"
-const pathParts = window.location.pathname.split('/').filter(Boolean);
-const path = pathParts.slice(-2).join('/');
+// Extract only the filename from the current path
+const path = window.location.pathname.split('/').pop();
 
 // Attempt to import the matched module
 const modulePath = pageToModuleMap[path];
@@ -28,6 +28,7 @@ if (modulePath) {
       console.error(`Failed to load module ${modulePath}:`, err);
     });
 } else {
-  console.info(`No animation configured for: ${path}`);
+  console.info(`No background animation configured for: ${path}`);
 }
-console.log("Full pathname:", window.location.pathname);
+
+console.log("Resolved path:", path);
