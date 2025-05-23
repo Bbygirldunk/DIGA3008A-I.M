@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="../Profile/About.css">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../normalise.css">
-    <link rel="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+  <title>About Me | Nosipho Makhathini</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="../normalise.css" />
+  <link rel="stylesheet" href="../main.css" />
+  <link rel="stylesheet" href="../Profile/About.css" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap" rel="stylesheet" />
 </head>
+
 <body>
- <canvas id="veil-bg"></canvas>
+  <canvas id="veil-bg"></canvas>
+
   <nav>
     <div class="nav-container">
       <div class="logo">MySite</div>
@@ -24,42 +31,44 @@
       </ul>
     </div>
   </nav>
-    
-     <section>
-     <header class ="page-header">
-     <h1>Get To Know Me</h1>
-     <div class="intro-container">
-      <div class="profile-img-box">
-      <img src="../Images/Profile_Picture.jpg" alt="Profile_Picture">
-</div>
-<div class="about-text-box"> 
-<p>Hey there! I'm a creative thinker with a passion for animation, storytelling, and digital design. I love bringing ideas to life—whether through dynamic animations, immersive digital experiences, or engaging narratives. Reading fuels my imagination, inspiring me to push creative boundaries and craft unique projects. My goal is to create meaningful and visually stunning digital experiences that leave a lasting impact. Whether it's through games, websites, or animation, I strive to blend technology and creativity in exciting ways!</p>
-   </div>  
-   </div>
-  
-</header>
-</section>
 
-<footer class="page-footer">
-      <ul class="footer-links">
-      <li> <a href="../Contact/Contact.html">Get In Touch</a>
-      <li> <a href= "../index.html">Home</a></li>
-      </ul>
-    <p class="footer-note"> Designed with love and pastel dreams </p>
-    </footer>
-    <script src="../scripts/nav.js"></script>
-    <button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
-  <img src="../Images/scroll-downBtn.png" alt="Scroll down">
-</button>
+  <main>
+    <section>
+      <header class="page-header">
+        <h1>Get To Know Me</h1>
+      </header>
+      <div class="intro-container">
+        <div class="profile-img-box">
+          <img src="../Images/Profile_Picture.jpg" alt="Profile picture of Nosipho Makhathini" />
+        </div>
+        <div class="about-text-box">
+          <p>
+            Hey there! I'm a creative thinker with a passion for animation, storytelling, and digital design. I love bringing ideas to life—whether through dynamic animations, immersive digital experiences, or engaging narratives. Reading fuels my imagination, inspiring me to push creative boundaries and craft unique projects. My goal is to create meaningful and visually stunning digital experiences that leave a lasting impact. Whether it's through games, websites, or animation, I strive to blend technology and creativity in exciting ways!
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
-  <img src="../Images/scroll-upBtn.png" alt="Scroll up">
-</button>
+  <footer class="page-footer">
+    <ul class="footer-links">
+      <li><a href="../Contact/Contact.html">Get In Touch</a></li>
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+    <p class="footer-note">Designed with love and pastel dreams</p>
+  </footer>
 
-<script src="../scripts/scrollButton.js" defer></script>
-<script src="../backgrounds/veilAurora.js" defer></script>
+  <script src="../scripts/nav.js"></script>
 
+  <button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
+    <img src="../Images/scroll-downBtn.png" alt="Scroll down" />
+  </button>
 
-  
-    </body>
+  <button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
+    <img src="../Images/scroll-upBtn.png" alt="Scroll up" />
+  </button>
+
+  <script src="../scripts/scrollButton.js" defer></script>
+  <script src="../backgrounds/veilAurora.js" defer></script>
+</body>
 </html>

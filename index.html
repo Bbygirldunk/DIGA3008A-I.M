@@ -1,84 +1,91 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="normalise.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curated For Delight</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Curated For Delight | Nosipho Makhathini</title>
+  <meta name="description" content="Welcome to the dreamy digital portfolio of Nosipho Makhathini. Explore art, writing, design, and heartfelt creativity curated for your delight.">
+  <meta name="author" content="Nosipho Makhathini">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Curated For Delight | Nosipho Makhathini">
+  <meta property="og:description" content="Explore Nosipho's dreamy, artistic portfolio and connect with heartfelt creativity.">
+  <meta property="og:url" content="https://bbygirldunk.github.io/DIGA3008A-I.M/index.html"> 
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Curated For Delight | Nosipho Makhathini">
+  <meta name="twitter:description" content="Explore Nosipho's dreamy, artistic portfolio and connect with heartfelt creativity.">
+  
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="normalise.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
+<body>
+  <canvas id="star-canvas"></canvas>
 
-  <body>
-    <canvas id="star-canvas"></canvas>
-    <nav>
-        <div class="nav-container">
-          <div class="logo">MySite</div>
-          <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-          <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Blogs/BlogsCoverPage.html">Blogs</a></li>
-            <li><a href="Profile/About.html">Profile</a></li>
-            <li><a href="Contact/Contact.html">Contact</a></li>
-            <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
-          </ul>
-        </div>
-      </nav>
-
- <header class ="page-header">
- <h1>Curated For Delight</h1> 
-</header> 
-
-   <section class="intro-section"> 
-
-
-<p>Welcome to my little corner of the internet! I'm <a class="h-card" href ="Profile/About.html">Nosipho Makhathini</a> , a passionate digital artist, and this is where I get to show you a bit of what I love to do. Whether it's my writing or any 
-    <a href="Profile/About.html" >creative content</a> I pour my heart into every project. Take a look around, explore my work, and let’s connect! I’m always excited to meet new people and collaborate on fun ideas.</p> 
-
-
-<section class="go-to-section">
-<h1>Go To:</h1>
-<div class="go-to-item">
-
-    <a href="DesignSectionPage/designSection.html">Design Section</a>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">MySite</div>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Blogs/BlogsCoverPage.html">Blogs</a></li>
+        <li><a href="Profile/About.html">Profile</a></li>
+        <li><a href="Contact/Contact.html">Contact</a></li>
+        <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="go-to-item">
-    <a href="EssaySectionPage/Essay Section.html">Essay Section</a>
-    </div>
-</section>
-</section>
-<footer class="page-footer">
-  <ul class="footer-links">
-  <li> <a href="../Contact/Contact.html">Get In Touch</a>
-  <li> <a href= "../index.html">Home</a></li>
-  </ul>
-<p class="footer-note"> Designed with love and pastel dreams </p>
-</footer>
+  <header class="page-header">
+    <h1>Curated For Delight</h1>
+  </header>
 
+  <section class="intro-section">
+    <p>Welcome to my little corner of the internet! I'm <a class="h-card" href="Profile/About.html">Nosipho Makhathini</a>, a passionate digital artist, and this is where I get to show you a bit of what I love to do. Whether it's my writing or any 
+      <a href="Profile/About.html">creative content</a>, I pour my heart into every project. Take a look around, explore my work, and let’s connect! I’m always excited to meet new people and collaborate on fun ideas.</p>
+
+    <section class="go-to-section">
+      <h1>Go To:</h1>
+      <div class="go-to-item">
+        <a href="DesignSectionPage/designSection.html">Design Section</a>
+      </div>
+      <div class="go-to-item">
+        <a href="EssaySectionPage/Essay Section.html">Essay Section</a>
+      </div>
+    </section>
+  </section>
+
+  <footer class="page-footer">
+    <ul class="footer-links">
+      <li><a href="Contact/Contact.html">Get In Touch</a></li>
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <p class="footer-note">Designed with love and pastel dreams</p>
+  </footer>
+
+  <!-- Scripts -->
   <script src="scripts/nav.js"></script>
- 
+  <script src="scripts/scrollButton.js" defer></script>
+  <script src="backgrounds/particleAnimation.js" defer></script>
 
+  <!-- Scroll Buttons -->
+  <button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
+    <img src="Images/scroll-downBtn.png" alt="Scroll down">
+  </button>
 
-<button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
-  <img src="Images/scroll-downBtn.png" alt="Scroll down">
-</button>
-
-<button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
-  <img src="Images/scroll-upBtn.png" alt="Scroll up">
-</button>
-
-<script src="scripts/scrollButton.js" defer></script>
-<script src="backgrounds/particleAnimation.js" defer ></script>
-
-
-
-
-
+  <button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
+    <img src="Images/scroll-upBtn.png" alt="Scroll up">
+  </button>
 </body>
 
 </html>

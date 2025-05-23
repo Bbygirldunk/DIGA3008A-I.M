@@ -1,19 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Blog Posts | Nosipho Makhathini</title>
+  <meta name="description" content="Dive into Nosipho Makhathini's weekly reflections, creative thoughts, and personal insights. A cozy space for readers to explore and connect.">
+  <meta name="author" content="Nosipho Makhathini">
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
-    <title>Blog Posts</title>
-    <link rel ="stylesheet" href="../Blogs/Blogs.css">
-    <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="../normalise.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Blog Posts | Nosipho Makhathini">
+  <meta property="og:description" content="Dive into Nosipho Makhathini's weekly reflections, creative thoughts, and personal insights. A cozy space for readers to explore and connect.">
+  <meta property="og:image" content="https://source.unsplash.com/1200x630/?blog,writing">
+  <meta property="og:url" content="https://bbygirldunk.github.io/DIGA3008A-I.M/Blogs/BlogsCoverPage.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog Posts | Nosipho Makhathini">
+  <meta name="twitter:description" content="Dive into Nosipho Makhathini's weekly reflections, creative thoughts, and personal insights. A cozy space for readers to explore and connect.">
+  <meta name="twitter:image" content="https://source.unsplash.com/1200x630/?blog,writing">
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+  <!-- Stylesheets -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../Blogs/Blogs.css">
+  <link rel="stylesheet" href="../main.css">
+  <link rel="stylesheet" href="../normalise.css">
 </head>
 
-<body> 
+<body>
   <canvas id="aurora-bg"></canvas>
-    <nav>
+
+  <nav>
     <div class="nav-container">
       <div class="logo">MySite</div>
       <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
@@ -26,72 +46,55 @@
       </ul>
     </div>
   </nav>
-    <main>
-        
-                
-        <div class="blog-intro-wrapper">
-        <header class="blog-intro">
 
-            <h1> Explore the Blogs!</h1>
+  <main>
+    <div class="blog-intro-wrapper">
+      <header class="blog-intro">
+        <h1>Explore the Blogs!</h1>
+        <p>Welcome to my ultimate yap section. Grab a cup of coffee, some delicious treats, and come along to experience my journey. Happy reading!</p>
+      </header>
+    </div>
 
-            <p>Welcome to my ultimate yap section. Grab a cup of coffee, some delicious treats and come along to experience my journey. Happy reading!</p>
-           
-        </header>
-        </div>
+    <div class="blog-grid">
+      <div class="blog-card">
+        <a href="week 1.html">Week 1 Blog Post</a>
+      </div>
+      <div class="blog-card">
+        <a href="week 2.html">Week 2 Blog Post</a>
+      </div>
+      <div class="blog-card">
+        <a href="week 3.html">Week 3 Blog Post</a>
+      </div>
+      <div class="blog-card">
+        <a href="week 4.html">Week 4 Blog Post</a>
+      </div>
+      <div class="blog-card">
+        <a href="week 7.html">Week 7 Blog Post</a>
+      </div>
+    </div>
+  </main>
 
-            <div class="blog-grid">
-            <div class="blog-card">
-                <a href="week 1.html">Week 1 Blog Post</a>
-            </div>
+  <footer class="page-footer">
+    <ul class="footer-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../Contact/Contact.html">Get in Touch</a></li>
+      <li><a href="../Profile/About.html">My Profile</a></li>
+      <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+    </ul>
+    <p class="footer-note">Designed with love and pastel dreams</p>
+  </footer>
 
-            <div class="blog-card">
-                <a href="week 2.html">Week 2 Blog Post </a>
-                </div>
-            <div class="blog-card">
-                <a href="week 3.html">Week 3 Blog Post</a>
-            </div>
+  <!-- Scripts -->
+  <script src="../scripts/nav.js"></script>
+  <script src="../scripts/scrollButton.js" defer></script>
+  <script type="module" src="../scripts/main.js"></script>
 
-            <div class="blog-card">
-                <a href="week 4.html">Week 4 Blog Post</a>
-                </div>
-
-                <div class="blog-card">
-                    <a href="week 7.html">Week 7 Blog Post</a>
-                </div>
-            </div>
-
-            </div>
-            
-
-    
-
-        </section>
-    </main>
-
-    <footer class="page-footer">
-        <ul class="footer-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../Contact/Contact.html">Get in Touch</a></li>
-          <li><a href="../Profile/About.html">My Profile</a></li>
-          <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
-        </ul>
-        <p class="footer-note">Designed with love and pastel dreams</p>
-      </footer>
-      <script src="../scripts/nav.js"></script>
-      
-<button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
-  <img src="../Images/scroll-downBtn.png" alt="Scroll down">
-</button>
-
-
-<button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
-  <img src="../Images/scroll-upBtn.png" alt="Scroll up">
-</button>
-<script src="../scripts/scrollButton.js" defer></script>
-<script type="module" src="../scripts/main.js"></script>
-
-
-
-      
+  <!-- Scroll Buttons -->
+  <button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
+    <img src="../Images/scroll-downBtn.png" alt="Scroll down">
+  </button>
+  <button class="scroll-btn scroll-up" id="scrollUpBtn" onclick="scrollToTop()">
+    <img src="../Images/scroll-upBtn.png" alt="Scroll up">
+  </button>
 </body>
 </html>
