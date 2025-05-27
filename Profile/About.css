@@ -80,11 +80,6 @@
   transition: transform 0.3s ease;
 }
 
-.profile-img-box:hover,
-.about-text-box:hover {
-  transform: scale(1.015);
-}
-
 .profile-img-box img {
   display: block;
   width: 300px;
