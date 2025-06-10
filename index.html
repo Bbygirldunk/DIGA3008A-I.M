@@ -27,6 +27,8 @@
   <link rel="stylesheet" href="normalise.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 </head>
 
 <body>
@@ -65,18 +67,29 @@
     </section>
   </section>
 
+<!--footer-->
   <footer class="page-footer">
-    <ul class="footer-links">
-      <li><a href="Contact/Contact.html">Get In Touch</a></li>
-      <li><a href="index.html">Home</a></li>
-    </ul>
-    <p class="footer-note">Designed with love and pastel dreams</p>
-  </footer>
+  <ul class="footer-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+    <li><a href="Profile/About.html">About</a></li>
+    <li><a href="Blogs/BlogsCoverPage.html">Blog</a></li>
+    <li><a href="Contact/Contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-socials">
+    <a href="mailto:2708798@students.wits.ac.za" aria-label="Email" class="footer-icon"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Bbygirldunk" target="_blank" aria-label="GitHub" class="footer-icon"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/noccy-xulu-aa2001291/" target="_blank" aria-label="LinkedIn" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+  </div>
+  
+  <p class="footer-note" id="footerNote"></p>
+</footer>
 
   <!-- Scripts -->
   <script src="scripts/nav.js"></script>
   <script src="scripts/scrollButton.js" defer></script>
   <script src="backgrounds/particleAnimation.js" defer></script>
+  <scripts src="scripts/footer.js" defer></scripts>
 
   <!-- Scroll Buttons -->
   <button class="scroll-btn scroll-down" id="scrollDownBtn" onclick="scrollToNext()">
