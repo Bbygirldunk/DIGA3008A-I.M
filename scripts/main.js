@@ -1,6 +1,6 @@
 // script/main.js
 
-const repoName = 'DIGA3008A-I.M'; // Your GitHub repository name
+const repoName = 'DIGA3008A-I.M'; 
 
 const pageToModuleMap = {
   'index.html': 'backgrounds/particleAnimation.js',

@@ -103,13 +103,19 @@
 }
 
 
-  #veilAurora-bg{
+  #veil-bg {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
-  background: #251f5b; 
   pointer-events: none;
+  background: linear-gradient(to bottom, #3a3472, #212268, #24243e);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100;
 }
