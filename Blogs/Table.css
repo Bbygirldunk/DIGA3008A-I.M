@@ -1,0 +1,50 @@
+/* Tables */
+.blog-post table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(255, 93, 242, 0.3);
+}
+
+.blog-post th,
+.blog-post td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(138, 43, 226, 0.2);
+  font-size: 1.1rem;
+  color: #40002c;
+}
+
+.blog-post th {
+  background: rgba(255, 230, 255, 0.4);
+  color: #4a0033;
+  font-weight: bold;
+}
+
+/* List Boxes */
+.blog-post .styled-list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog-post .styled-list li {
+  background: rgba(255, 255, 255, 0.6);
+  border-left: 5px solid #cc66ff;
+  padding: 1rem 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(255, 153, 204, 0.3);
+  font-weight: 600;
+  font-size: 1.15rem;
+  transition: background-color 0.3s ease;
+}
+
+.blog-post li:hover {
+  background-color: rgba(255, 240, 255, 0.8);
+}
