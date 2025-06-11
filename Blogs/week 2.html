@@ -6,9 +6,27 @@
     <link rel="stylesheet" href="../Blogs/week2.css">
     <link rel="stylesheet" href="../normalise.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Week 2 Blog Post</title>
 </head>
 <body> 
+
+
+  
+ <nav>
+    <div class="nav-container">
+      <div class="logo">MySite</div>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Blogs/BlogsCoverPage.html">Blogs</a></li>
+        <li><a href="../Profile/About.html">Profile</a></li>
+        <li><a href="../contact/Contact.html">Contact</a></li>
+        <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
     <article class="blog-post week-two">
   <h1>Blog</h1>
   <h2> Week 2</h2>
@@ -37,7 +55,7 @@
    </article>
    <article class="url-structure">
     <h2>Website URL Structure</h2>
-    <table border="1">
+    <table border ="1">
       <thead>
         <tr>
           <th>Page</th>
@@ -86,15 +104,33 @@
           <td data-label="URL">/essays Section Page.html</td>
         </tr>
       </tbody>
-    </table>
-  
-  
+      </table>
+  <hr />
+  <div class="blog-navigation"></div>
+      <p><a href="../Blogs/week 3.html">Next Week's Post</a></p>
+      <p><a href="../Blogs/week 2.html">Previous Blog Post </a></p>
+    </div>
+  </article>
 
-  <p><a href="../Blogs/week 3.html">Next</a></p>
-    <p> <a href="../Blogs/week 1.html">Go back</a></p>
-   <nav> 
-    <p> <a href="../index.html">Home</a></p>
-   </nav>
-</article>
+  <!--footer-->
+  <footer class="page-footer">
+  <ul class="footer-links"> 
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+    <li><a href="../Profile/About.html">About</a></li>
+    <li><a href="../Blogs/BlogsCoverPage.html">Blog</a></li>
+    <li><a href="../contact/Contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-socials">
+    <a href="mailto:2708798@students.wits.ac.za" aria-label="Email" class="footer-icon"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Bbygirldunk" target="_blank" aria-label="GitHub" class="footer-icon"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/noccy-xulu-aa2001291/" target="_blank" aria-label="LinkedIn" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+  </div>
+  
+  <p class="footer-note" id="footerNote"></p>
+</footer>
+
+<script src="../scripts/nav.js" defer></script> 
+<script src ="../scripts/footer.js" defer></script>
 </body>
 </html>

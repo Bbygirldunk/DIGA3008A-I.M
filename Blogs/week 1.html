@@ -5,13 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="../Blogs/week1.css" />
   <link rel="stylesheet" href="../normalise.css" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Cormorant+Garamond&display=swap" rel="stylesheet">
   <title>Week 1 Blog Post - Setting Up GitHub & Web History</title>
 </head>
 <body>
+
+ <nav>
+    <div class="nav-container">
+      <div class="logo">MySite</div>
+      <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../Blogs/BlogsCoverPage.html">Blogs</a></li>
+        <li><a href="../Profile/About.html">Profile</a></li>
+        <li><a href="../contact/Contact.html">Contact</a></li>
+        <li><a href="../Portfolio/Portfolio.html">Portfolio</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <article class="blog-post">
     <h1>Week 1 Blog: Setting Up GitHub & Web History</h1>
     <h3><time datetime="2025-02-16">16 February 2025</time></h3>
@@ -92,9 +105,30 @@
         make much sense to me yet, but it should suffice for the moment.
       </p>
       <hr />
-      <p><a href="week2.html">Next Week's Post</a></p>
+      <p><a href="../Blogs/week 2.html">Next Week's Post</a></p>
       <p><a href="../Blogs/BlogsCoverPage.html">Go Back to Blog List</a></p>
     </section>
   </article>
+
+  <!--footer-->
+  <footer class="page-footer">
+  <ul class="footer-links"> 
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Portfolio/Portfolio.html">Portfolio</a></li>
+    <li><a href="Profile/About.html">About</a></li>
+    <li><a href="Blogs/BlogsCoverPage.html">Blog</a></li>
+    <li><a href="Contact/Contact.html">Contact</a></li>
+  </ul>
+  <div class="footer-socials">
+    <a href="mailto:2708798@students.wits.ac.za" aria-label="Email" class="footer-icon"><i class="fas fa-envelope"></i></a>
+    <a href="https://github.com/Bbygirldunk" target="_blank" aria-label="GitHub" class="footer-icon"><i class="fab fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/noccy-xulu-aa2001291/" target="_blank" aria-label="LinkedIn" class="footer-icon"><i class="fab fa-linkedin"></i></a>
+  </div>
+  
+  <p class="footer-note" id="footerNote"></p>
+</footer>
+
+<script src="../scripts/nav.js"> defer </script>
+<script src ="../scripts/footer.js">defer</script>
 </body>
 </html>

@@ -9,7 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     "Wishing you a dreamy day ✨",
     "Thanks for visiting my portfolio!",
     "Stay inspired and creative 🌸",
-    "Designed with love and pastel dreams"
+    "Designed with love and pastel dreams",
+    "Always be positive"
   ];
   
   const greeting = greetings[Math.floor(Math.random() * greetings.length)];
