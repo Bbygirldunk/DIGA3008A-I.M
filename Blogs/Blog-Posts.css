@@ -273,3 +273,39 @@ nav {
 .page-section p {
   margin-left: 1rem;
 }
+
+.image-box {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.image-box img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(200, 150, 200, 0.2);
+  margin-bottom: 0.5rem;
+}
+
+.image-box .caption {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #7a4c61;
+}
+
+
+.post-nav {
+  text-align: center;
+  margin-top: 3rem;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.post-nav a {
+  color: #c36b8f;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.1rem;
+}
+
+.post-nav a:hover {
+  text-decoration: underline;
+}
