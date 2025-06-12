@@ -111,8 +111,7 @@
   height: 100vh;
   z-index: -1;
   pointer-events: none;
-  background: linear-gradient(to bottom, #3a3472, #212268, #24243e);
-}
+  }
 
 html, body {
   margin: 0;
