@@ -309,3 +309,75 @@ nav {
 .post-nav a:hover {
   text-decoration: underline;
 }
+
+
+.content-box p, .content-box li {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.content-box ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.content-box a {
+  color: #b75585;
+  text-decoration: none;
+}
+
+.content-box a:hover {
+  text-decoration: underline;
+}
+
+.scroll-btn {
+  position: fixed;
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.3s ease;
+}
+
+.scroll-btn img {
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+/* Positioning */
+.scroll-down {
+  bottom: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll-up {
+  bottom: 100px;
+  right: 40px;
+}
+
+/* Hover effect */
+.scroll-btn:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+/* Visible state */
+.scroll-btn.show {
+  opacity: 1;
+  pointer-events: auto;
+}
