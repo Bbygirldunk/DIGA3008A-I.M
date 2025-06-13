@@ -19,28 +19,27 @@
     animation-delay: 0.5s;
   }
   
-  .blogs header h1 {
-    width: 100vw;
-    position: relative;
-    z-index: 5;
-    font-family: 'Playfair Display', serif;
-    font-size: 3em;
-    background: linear-gradient(to right, #5e013f, #a56a8f);
-    -webkit-background-clip: fill;
-    -webkit-text-fill-color:#eeb0d6 ;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-top: 3rem;
+  .blog-intro h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: bold;
+  margin-top: 2rem;
+  line-height: 1.2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(to right, #64445f, #8e048e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:#342039fb;
+  background-clip: text;
+  
   }
-
-
 
   .blog-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 2rem;
+    gap: 02rem;
     padding: 2rem;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -86,25 +85,26 @@
 .blog-intro-wrapper{
 display: flex;
 justify-content: center;
-padding:3rem 1rem;
-background: rgba(225, 240, 250, 0.3);
+padding:5rem 3rem;
+background: rgba(255, 198, 247, 0.308);
 border-radius: 2rem;
-margin:2rem auto;
+margin:auto;
 max-width: 900px;
 backdrop-filter: blur(10px);
 -webkit-backdrop-filter: blur(10px);
-box-shadow:0 8px 25px rgba(136, 0, 90, 0.1)
+box-shadow:0 8px 25px rgba(55, 2, 38, 0.579);
+font-size:20px;
 }
 
 .blog-intro{
   text-align: center;
   animation: fadeInSlideUp 1.2s ease-out forwards;
   opacity: 0;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 .blog-intro p{
   font-family: 'Cormont Garamond', serif;
-  font-size: 1.6em;
+  font-size: 50px;
   color:#4a0038;
   opacity: 0.85;
   line-height: 1.7;
@@ -127,4 +127,14 @@ box-shadow:0 8px 25px rgba(136, 0, 90, 0.1)
   height: 100vh;
   z-index: -1;
  
+}
+.content-box {
+  background-color: #fff6f9;
+  border: 2px solid #ffd6e0;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 900px;
+  width:100%;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
 }

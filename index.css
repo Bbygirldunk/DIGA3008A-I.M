@@ -7,7 +7,7 @@
     rgba(255, 170, 225, 0.6)   
   );
   border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(255, 149, 202, 0.5); 
+  box-shadow: 0 10px 30px rgba(71, 32, 51, 0.5); 
   font-family: 'Quicksand', sans-serif;
   font-size: 18px;
   line-height: 1.6em;
@@ -87,4 +87,11 @@
     color: #f8c8dc;
   }
   
-  
+  .content-box {
+  background-color: #fff6f9;
+  border: 2px solid #ffd6e0;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
+}
