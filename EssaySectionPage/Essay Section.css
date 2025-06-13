@@ -1,7 +1,47 @@
+.essay-content {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: rgba(252, 179, 228, 0.12);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 30px rgba(56, 24, 53, 0.3);
+  text-align: center;
+}
+
+.essay-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.3rem;
+  background: linear-gradient(to right, #730072, #e060c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 2rem;
+}
+
 .essay-content iframe {
   border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(255, 97, 216, 0.529);
+  box-shadow: 0 8px 24px rgba(255, 97, 216, 0.3);
+  transition: transform 0.3s ease;
 }
-h2{
-    color: aliceblue;
+
+.essay-content iframe:hover {
+  transform: scale(1.01);
+}
+
+.essay-content p {
+  font-family: 'Poppins', sans-serif;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #321132;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.2s ease, transform 1.2s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
