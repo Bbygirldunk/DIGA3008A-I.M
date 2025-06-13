@@ -94,3 +94,34 @@
   opacity: 1;
   pointer-events: auto;
 }
+
+ .content-box {
+  background-color: #fff6f9;
+  border: 2px solid #ffd6e0;
+  border-radius: 20px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
+}
+
+.content-box ul {
+  margin-top: 1rem;
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.content-box a {
+  color: #b75585;
+  text-decoration: none;
+}
+
+.content-box a:hover {
+  text-decoration: underline;
+}
+
+.content-box h3 {
+  color: #d94884;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
